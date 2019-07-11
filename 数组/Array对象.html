@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Array对象</title>
+		<script>
+			//方式1：指定数组长度
+			var arr1 = new Array;
+			//方式2：指定长度
+			var arr2 = new Array();
+			//方式3：指定具体内容
+			var arr3 = new Array(true,'a',"hello",34);
+			//方式1：简写方式
+			var arr4 = (true,'a',"hello",34);
+			
+			/*两个方法：
+			 * join(str)：通过指定字符串，将数组中的内容用该字符串拼接，返回字符串值
+ 			 * reverse():将数组中的内容进行反转
+			 */
+			var strArray = ["Java","Php","python","hadoop","C++"];
+			var str = strArray.join("-");
+			document.write(str);
+			document.write("<hr />");
+			
+			for(var i= 0; i< strArray.length;i++){
+				document.write(strArray[i]+"&nbsp;") ;
+			}
+			
+			//反转
+			document.write("<hr />");
+			strArray = strArray.reverse();
+			for(var i=0; i<strArray.length; i++) {
+				document.write(strArray[i]+"&nbsp;");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
