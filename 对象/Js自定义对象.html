@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Js自定义对象</title>
+		<script>
+			/*//方式1：定义了Person对象
+			function Person(name,age) {
+				//追加属性
+				this.name = name;
+				this.age = age;
+				//追加方法
+				this.say=function() {
+					alert("调用了say的功能");
+				}
+			}
+			//创建对象
+			var p = new Person("洋洋",20);
+			//输出属性
+			document.write(p.name+"<br/>") ;
+			document.write(p.age+"<br/>") ;
+			//调用方法
+			p.say() ;*/
+			
+			/*//方式2：无参方式，类似于Java中的参数构造
+			function Person() {}
+			//创建对象
+			var p = new Person();
+			//追加属性
+			p.name = "张三";
+			p.age = 18;
+			//追加方法
+			p.say = function(){
+				alert("调用了张三的say功能");
+			}
+			//输出属性
+			document.write(p.name+"<br />");
+			document.write(p.age+"<br />");
+			//调用方法
+			p.say();*/
+			
+/*			//方式3：创建Object对象：在js中Object对象代表了所有对象，是一个模板对象
+			var p = new Object();
+			//追加属性
+			p.name="李四" ;
+			p.age=19;
+			//追加方法
+			p.say=function(){
+				alert("调用了李四的say功能") ;
+			}
+			//输出属性
+			document.write(p.name+"<br />");
+			document.write(p.age+"<br />");
+			//调用方法
+			p.say();*/
+			
+			//方式4：字面量的方式：json格式
+			var p = {
+				//追加属性
+				"name":"王五",
+				"age":25,
+				//追加方法
+				"say":function(){
+			  		alert("调用了王五的say功能") ;
+			    } 
+			};
+			//输出属性
+			document.write(p.name+"<br />");
+			document.write(p.age+"<br />");
+			//调用方法
+			p.say();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
