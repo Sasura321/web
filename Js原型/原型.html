@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Js原型</title>
+		<script>
+			//给Arrayd对象中追加search方法
+			Array.prototype.search = function(target) {
+				//遍历数组
+				for(var i=0; i<this.length; i++) {
+					if(this[i] == target) {
+						return i;
+					}
+				}
+				//找不到，返回-1
+				return -1;
+			}
+			
+			//追加max方法
+			Array.prototype.max = function() {
+				//参照物
+				var max = this[0];
+				//遍历其他元素
+				for(var i = 1; i<this.length; i++) {
+					if(this[i] > max) {
+						max = this[i];
+					}
+				}
+				return max;
+			}
+			//定义数组
+			var arr = [8,67,15,21,36,10];
+			var index = arr.search(15) ;
+			document.write("位置是："+index+"<br/>") ;
+			var max = arr.max() ;
+			document.write("最大值是："+max+"<br/>") ;
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
