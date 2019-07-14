@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>window对象</title>
+		<script>
+			function testOpen(){
+				// 打开一个窗口，执行open方法
+				window.open("表单验证.html","_blank","width:400px;height:400px;toorbar:0")
+			}
+			
+			function test() {
+				//console对象
+				console.log("123");
+			}
+			
+			//定义任务ID
+			var taskID;
+			function testInterval(){
+				//taskId = window.setInterval("test()",3000);//重复
+			}
+			
+			function testTimeout(){
+				taskId = window.setTimeout("test()",3000);
+			}
+			
+			//取消定时任务
+			function testClearInterval(){
+				window.clearInterval(taskId);
+			}
+			
+			function testClearTimeout() {
+				window.clearTimeout(taskId);
+			}
+		</script>
+	</head>
+	
+	<body>
+		<input type="button" value="open" onclick="testOpen()" />
+		<br />		
+		<input type="button" value="intreval" onclick="testInterval()" />
+		<br />
+		<input type="button" value="intreval" onclick="testTimeout()" />
+		<br />
+		<input type="button" value="clearInterval" onclick="testClearInterval()" />
+		<br />
+		<input type="button" value="clearTiemout" onclick="testClearTimeout()" />
+</body>
+</html>

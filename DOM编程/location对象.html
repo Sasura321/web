@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>location对象</title>
+		<script>
+			function testHref() {
+				window.location.href = "window对象.html";
+			}
+			
+			//reload:重新刷新页面
+			function load(){
+				window.location.reload();
+			}
+			
+			window.setInterval("load()",3000);
+		</script>
+	</head>
+	<body>
+		<input type="button" value="跳转" onclick="testHref()" />
+	</body>
+</html>
