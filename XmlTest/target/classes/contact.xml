@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--使用xml文档的结构来标签联系人（可以描述多个联系人）-->
+<!--<contact id="001" name="zhang san" gender="nan" phone="13571877111">
+</contact>-->
+
+<!--有多个根标签
+    在xml文件定义时，有且仅有一个根标签-->
+<contact-list>
+    <contact id="001">
+        <name>张三</name>
+        <gender>男</gender>
+        <phone>1234567890</phone>
+        <email>zahngsan@qq.com</email>
+        <address>西安</address>
+    </contact>
+    <contact id="001">
+        <name>李四</name>
+        <gender>男</gender>
+        <phone>1234567890</phone>
+        <email>zahngsan@qq.com</email>
+        <address>咸阳</address>
+    </contact>
+</contact-list>
