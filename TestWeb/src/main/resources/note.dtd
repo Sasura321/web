@@ -1,0 +1,12 @@
+
+        <!ELEMENT note (to?,from*,heading,body+)>
+        <!ELEMENT to      (#PCDATA)>
+        <!ELEMENT from    (#PCDATA)>
+        <!ELEMENT heading (#PCDATA)>
+        <!ELEMENT body    (#PCDATA)
+
+<!--
+<!ATTLIST 元素名称 属性名称 属性类型 默认值>
+-->
+        <!--约束body的内容是普通字符串并且必须指定id属性-->
+        <!ATTLIST body id CDATA #FIXED "002">

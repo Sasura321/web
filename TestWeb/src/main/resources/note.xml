@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+
+<!--
+xml文件的DTD约束:
+ 内部文件约束的方式
+-->
+
+<!--外部方式：
+
+<!DOCTYPE 根元素 SYSTEM "文件名(约束文件)">
+-->
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+
+    <body id="002">Don't forget me this weekend</body>
+    <body id="002">Don't forget me this weekend</body>
+</note>

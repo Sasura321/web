@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bite:书架 xmlns:bite="http://www.bite.cn"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.bite.cn book.xsd">
+
+    <bite:书 id="1">
+        <bite:书名>10</bite:书名>
+        <bite:作者>张三</bite:作者>
+        <bite:售价>28.00元</bite:售价>
+    </bite:书>
+</bite:书架>
