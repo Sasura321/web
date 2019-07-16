@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<contact-list>
+    <contact id="001">
+        <name>zhangsan</name>
+        <gender>nan</gender>
+        <phone>12345678</phone>
+        <email>zhangsan@qq.com</email>
+        <address>xian</address>
+    </contact>
+
+    <contact id="002">
+        <name>lisi</name>
+        <gender>nan</gender>
+        <phone>12345678</phone>
+        <email>lisi@qq.com</email>
+        <address>xian</address>
+    </contact>
+</contact-list>
