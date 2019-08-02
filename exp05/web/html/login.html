@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login.html</title>
+
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+</head>
+
+<body>
+<center>
+    请输入用户名和口令查看账户信息
+    <br>
+</center>
+<form action="../LoginServlet" method="get">
+    <table width="298" border="0" align="center">
+        <tr>
+            <td align="right">
+                用户名：
+            </td>
+            <td align="left">
+                <input type="text" name="username" size="15">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                密&nbsp;&nbsp;码：
+            </td>
+            <td>
+                <input type="password" name="password" size="15">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="登录">
+                &nbsp;
+                <input type="reset" value="取消">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
